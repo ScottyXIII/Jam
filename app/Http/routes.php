@@ -48,11 +48,6 @@ Route::group(['middleware' => ['web'], ['auth']], function () {
 		return view('admin.home');
 	});
 
-
-	Route::get('/admin/home', function() {
-	    return view('admin.home');
-	});
-
 });
 
 
