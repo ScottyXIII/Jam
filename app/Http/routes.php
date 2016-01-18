@@ -29,6 +29,16 @@ Route::get('/login',  'Auth\AuthController@getLogin');
 Route::post('/login', 'Auth\AuthController@postLogin'); 
 
 
+
+ // Admin routes 
+Route::group(['middleware' => ['admin']], function () {
+		
+	Route::get('/jason', function() { 
+		return view('admin.home');
+	});
+
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -39,15 +49,8 @@ Route::post('/login', 'Auth\AuthController@postLogin');
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
- // Admin routes 
-Route::group(['middleware' => ['web'], ['auth']], function () {
+Route::group(['middleware' => ['web']], function () {
    Route::auth();
-
-	Route::get('/jason', function () {
-		return view('admin.home');
-	});
-
 });
 
 
