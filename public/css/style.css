@@ -1,0 +1,135 @@
+/*
+
+Custom style for JamElectrical. 
+
+			
+*/
+
+.services-list { 
+	
+	overflow: hidden;
+}
+
+
+.services-list li {
+	display:inline; 
+	width:48%;
+	float:left;
+	margin:5px;
+}
+
+.bb-alert {
+            
+            position: fixed;
+            bottom: 20%;
+            right: 0;
+            margin-bottom: 0;
+            font-size: 1.2em;
+            padding: 1em 1.3em;
+            z-index: 2000;
+            width: 300px !important;
+        }
+#three-sections  {
+        text-align:center;
+}
+#itallics {
+        font-style:italic;
+}
+#quotes:before {
+        content: "\201C";
+}
+#quotes:after {
+        content: "\201D";
+}
+
+.top-section { 
+         background-image:url(../pictures/background.png);
+         margin:0; 
+         padding:0; 
+         border:0;
+}
+.location-section {
+        padding-top: 70px;
+        background-color:#FDFDFD !important;
+}
+.family-section {
+        padding-top: 70px;
+        background-color:#FFF !important;
+}
+.helpus-section { 
+        padding-top: 70px;
+        background-color:#F8F8F8 !important;
+}
+
+
+ body {
+         font-family:Georgia, serif !important;
+
+         background-color:#F9F9F9 !important;
+         font-size:1.5em !important;
+         padding-bottom:0 !important;
+
+ }
+#wrapper h1, h2, h3 {
+         color: #000000 !important;
+}
+
+.img-circle {   !important; color:#3a84df;}
+
+.navbar-default .navbar-nav li a:hover {
+text-decoration:underline;
+
+}
+ul .active { 
+        color:#000000 !important;
+        text-decoration:underline;
+} 
+.navbar-collapse ul li a   { 
+        color: #000000 !important;
+}
+#endorsements img {
+width:90px;
+height:90px;
+}
+
+#Header {
+margin-top:50px;
+}
+
+#header-icon {
+font-size:55px;
+margin-top:5px;
+margin-left:2px;   
+}
+
+
+#featured-testimonials{
+margin-top:50px; 
+position:relative;
+min-height:200px;
+padding-bottom:30px;
+
+}
+#buttons {
+position:absolute;
+bottom: 10px; 
+
+}
+
+.family-section-heading {
+font-size:50px;
+}
+
+.bottom {    
+position: absolute;
+bottom: 0;
+}
+
+.no-padding {
+padding: 0 !important;
+}
+
+#footer p {
+        padding:20px 0 20px 0;
+}
+			
