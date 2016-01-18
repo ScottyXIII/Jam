@@ -11,31 +11,33 @@
 |
 */
 
+// Public Routes
 Route::get('/', 'HomeController@index');
-Route::get('/login',  'Auth\AuthController@getLogin'); 
-//Route::post('/login', 'Auth\AuthController@postLogin'); 
-
 Route::get('/portfolio', 'PortfolioController@index');
-
 Route::get('/services', function() { 
 	return view('services');
 });
-
 Route::get('/about', function() { 
 	return view('about');
 });
-
 Route::get('/contact', function() { 
 	return view('contact');
 });
 
 
+Route::get('/login',  'Auth\AuthController@getLogin'); 
+Route::post('/login', 'Auth\AuthController@postLogin'); 
 
-// Admin routes 
-Route::get('/jason', ['middleware' => 'auth', function () {
-	return view('admin.home');
-}]);
 
+
+ // Admin routes 
+Route::group(['middleware' => ['admin']], function () {
+		
+	Route::get('/jason', function() { 
+		return view('admin.home');
+	});
+
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -47,12 +49,8 @@ Route::get('/jason', ['middleware' => 'auth', function () {
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
 Route::group(['middleware' => ['web']], function () {
-    //
+   Route::auth();
 });
 
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
 
-});
