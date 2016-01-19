@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
@@ -24,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data = array(
+            'images' => new \App\Images(),
+        ); 
+
+        return view('home')->with($data);
     }
 }
