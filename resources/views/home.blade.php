@@ -2,7 +2,6 @@
 
 @section('styles')
     <link href="css/carousel.css" rel="stylesheet"> 
-
 @stop
 
 @section('scripts')
@@ -11,6 +10,11 @@
     <script src="js/docs.min.js"></script>
     <script src="js/ContactFormDropDown.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
+
+    <script>
+        scrollToId("#location", "#location-section");
+        scrollToId("#r", "#Header");
+    </script>
 
 @stop
 

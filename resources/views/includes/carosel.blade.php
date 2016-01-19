@@ -13,7 +13,7 @@
                 <?php $loop = 0; ?>
                 <?php foreach ($images->CaroselImages()->get() as $image): ?> 
                     <div class="<?php if ($loop == 0) echo "item active"; else echo "item"; ?>">
-                    <img src="<?php echo $image->name; ?>" alt="First slide">
+                    <img src="images/<?php echo $image->name; ?>" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Fully Qualified Electrician.</h1>
@@ -25,7 +25,7 @@
                 <?php endforeach; ?> 
 
                 <div class="item">
-                    <img src="pictures/switch.jpg" alt="Second slide">
+                    <img src="images/logo.png" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Essex and London area.</h1>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="pictures/8.jpg" alt="Third slide">
+                    <img src="images/logo.png" alt="Third slide">
                     <div class="container"> 
                         <div class="carousel-caption">
                             <h1>Electrical Services.</h1>
