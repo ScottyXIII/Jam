@@ -23,4 +23,9 @@ class Images extends Model
     {
     	return $this->ImagesByTypeName('carosel');
    	} 
+
+    public function EndorsmentImages() 
+    {
+      return $this->ImagesByTypeName('endorsments');
+    } 
 }
